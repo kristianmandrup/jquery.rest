@@ -192,3 +192,19 @@ $.update(
 ```
 
 (`$.read` will of course always use GET, but the others can be changed to anything you desire.)
+
+### Use Ajax options object
+
+http://www.tutorialspoint.com/jquery/ajax-jquery-ajax.htm
+
+```javascript
+{
+  url: ''/tasks/update_all',
+  data: [
+    {id: '7', name: 'chris'},
+    {id: '7', name: 'anne'}
+  ],
+  success: function(data, textStatus, jqXHR) {},
+  failure: function(jqXHR, textStatus, errorThrown) {},
+}
+```
